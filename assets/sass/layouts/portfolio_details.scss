@@ -1,0 +1,357 @@
+// portfolio_details_page start
+.portfolio_details_page {
+    border: $border;
+    .portfolio_details_page_content {
+        border: $border;
+        // portfolio_content_details start
+        .portfolio_content_details {
+            border: $border;
+            width: 800px;
+            margin: auto;
+            margin-bottom: 40px;
+            @include xs {
+                width: 245px;
+                // width:100%;
+              }
+            @include sm {
+                width: 445px;
+              }
+            @include md {
+                width: 630px;
+              }
+            // project_name_and_catagori area start
+            .project_name_and_catagori {
+                border: $border;
+                .catagori {
+                    border: $border;
+                    margin-bottom: 25px;
+                    align-items: center;
+                    display: flex;
+                    span {
+                        border: $border;
+                        color: $white;
+                        // color: $off_white;
+                        font-family: $Poppins_Light;
+                        font-size: 15px;
+                        line-height: 15px;
+                        .light_mode & {
+                            font-size: 16px;
+                            line-height: 16px;
+                        }
+                        text-transform: capitalize;
+                        letter-spacing: 1px;
+                    }
+                    .catagori_title {
+                        // font-family: $Poppins_Regular;
+                        font-family: $Poppins_Medium;
+                        color: $orange;
+                        .light_mode & {
+                            color: $navy;
+                        }
+                    }
+                    .semicolon {
+                        margin: 0px 5px;
+                    }
+                    .catagori_name {
+                        color: $off_white;
+                    }
+                }
+                .project_name {
+                    border: $border;
+                    align-items: center;
+                    display: flex;
+                    .project_name_title {
+                        border: $border;
+                        // color: $orange;
+                        color: $white;
+                        .light_mode & {
+                            color: $orange;
+                        }
+                        font-family: $Poppins_Regular;
+                        font-size: 25px;
+                        line-height: 35px;
+                        letter-spacing: 1px;
+                        text-transform: capitalize;
+                        @include xs {
+                            font-size: 17px;
+                        line-height: 27px;
+                          }
+                    }
+                }
+            }
+            // project_name_and_catagori area end
+            // thimnil_image_area start
+            .thimnil_image_and_live_previer_area {
+                border: $border;
+                .thimnil_image {
+                    border: $border;
+                    width: 100%;
+                    height: 350px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    margin: 20px 0px;
+                    @include xs {
+                        height: 150px;
+                      }
+                    @include sm {
+                        height: 260px;
+                      }
+                }
+                .live_previer {
+                    border: $border;
+                    text-align: center;
+                    a {
+                        border: $border;
+                        font-family: $Poppins_Medium;
+                        text-transform: capitalize;
+                        font-size: 13px;
+                        line-height: 13px;
+                        letter-spacing: 1px;
+                        color: $white;
+                        border: 2px solid $orange;
+                        .light_mode & {
+                            color: $navy;
+                            border: 2px solid $orange;
+                        }
+                        padding: 8px 10px;
+                        border-radius: 2px;
+
+                        transition-duration: 0.4s;
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+            // thimnil_image_area end
+            // all contents_title name start
+            .contents_area {
+                border: $border;
+                // color: $white;
+                .contents_title {
+                    border: $border;
+                    align-items: center;
+                    display: flex;
+                    padding: 25px 0px;
+                    // color: $white;
+                    .title {
+                        border: $border;
+                        // color: $white;
+                        color: $orange;
+                        .light_mode & {
+                            color: $navy;
+                            font-family: $Poppins_Medium;
+                        }
+                        // font-family: $Poppins_Light;
+                        font-family: $Poppins_Regular;
+                        font-size: 20px;
+                        line-height: 20px;
+                        text-transform: capitalize;
+                        letter-spacing: 1px;
+                    }
+                }
+                .content_text {
+                    // color: $off_white;
+                    color: $white;
+                    .light_mode & {
+                        color: $off_white;
+                        font-family: $Poppins_Light;
+                        // font-family: $Poppins_Regular;
+                        font-size: 16px;
+                    }
+                    // font-family: $Poppins_Light;
+                    // font-family: $Poppins_Regular;
+                    font-family: $Poppins_ExtraLight;
+                    font-size: 15px;
+                    // line-height: 25px;
+                    // text-transform: capitalize;
+                    letter-spacing: 1px;
+                }
+            }
+            // all contents_title name end
+            // table_of_contents_area start
+            .table_of_contents_area {
+                .table_of_contents_area_title {
+                    .title {
+                    }
+                }
+                .table_of_contents {
+                    border: $border;
+                    ul {
+                        li {
+                            list-style-type: unset;
+                            color: $orange;
+                            .light_mode & {
+                                color: $off_white;
+                            }
+                            margin-left: 17px;
+                            margin-bottom: 15px;
+                            &:last-child {
+                                margin-bottom: unset;
+                            }
+                            a {
+                                border: $border;
+                                // display: block;
+                                margin-bottom: 10px;
+                                text-transform: capitalize;
+                                transition-duration: 0.4s;
+                                &:last-child {
+                                    margin-bottom: 0px;
+                                }
+                                &:hover {
+                                    color: $orange;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // table_of_contents_area end
+            // interoduction_area start
+            .interoduction_area {
+                .interoduction_title {
+                    .title {
+                    }
+                }
+                .contents_details {
+                    border: $border;
+                    .details {
+                        border: $border;
+                        line-height: 25px;
+                        .light_mode & {
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+            // interoduction_area end
+            // features_area start
+            .features_area {
+                .features_title {
+                    .title {
+                    }
+                }
+                .features_details {
+                    border: $border;
+                    ul {
+                        border: $border;
+                        li {
+                            margin-bottom: 15px;
+                            &:last-child {
+                                margin-bottom: unset;
+                            }
+                            .content_text {
+                                border: $border;
+                                align-items: center;
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
+            // features_area end
+            // technologies_area start
+            .technologies_area {
+                .technologies_title {
+                    .title {
+                    }
+                }
+                .technologies_details {
+                    border: $border;
+                    ul {
+                        border: $border;
+                        li {
+                            border: $border;
+                            align-items: center;
+                            display: flex;
+                            margin-bottom: 15px;
+                            &:last-child {
+                                margin-bottom: unset;
+                            }
+                            .content_text {
+                                border: $border;
+                            }
+                        }
+                    }
+                }
+            }
+            // technologies_area end
+            // screenshort_area start
+            .screenshort_area {
+                .screenshort_title {
+                    .title {
+                    }
+                }
+                ul {
+                    // screenshort_image_and_title_area start
+                    li {
+                        .screenshort_image_and_title_area {
+                            border: $border;
+                            .screenshort_image_title {
+                                border: $border;
+                                align-items: center;
+                                display: flex;
+                                margin-bottom: 15px;
+                                .image_title {
+                                    border: $border;
+                                    text-transform: capitalize;
+                                }
+                            }
+                            .screenshort_image {
+                                border: $border;
+                                margin-bottom: 50px;
+                                .screenshort_project_image {
+                                    border: $border;
+                                    width: 100%;
+                                    height: 350px;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: center;
+                                    @include xs {
+                                        height: 150px;
+                                      }
+                                    @include sm {
+                                        height: 265px;
+                                      }
+                                }
+                            }
+                        }
+                    }
+                    // screenshort_image_and_title_area end
+                }
+            }
+            // screenshort_area end
+            // setup_area start
+            .setup_area {
+                .setup_title {
+                    .title {
+                    }
+                }
+                .setup_details {
+                    border: $border;
+                    ul {
+                        border: $border;
+                        li {
+                            border: $border;
+                            align-items: center;
+                            display: flex;
+                            margin-bottom: 15px;
+                            &:last-child {
+                                margin-bottom: unset;
+                            }
+                            .content_text {
+                                border: $border;
+                            }
+                        }
+                    }
+                }
+            }
+            // setup_area end
+        }
+
+        // portfolio_content_details end
+    }
+}
+
+// portfolio_details_page end

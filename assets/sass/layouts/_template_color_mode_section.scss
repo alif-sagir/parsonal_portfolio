@@ -1,0 +1,49 @@
+// template_color_mode_section start
+.template_color_mode {
+    border: $border;
+    position: absolute;
+    bottom: 80px;
+    right: -19px;
+    cursor: pointer;
+    @include xs {
+        right: 0px;
+        top: 60px;
+      }
+    @include sm {
+        right: 0px;
+        top: 60px;
+      }
+    .color_mode_icon {
+        border: $border;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-color: #282933e6;
+        .light_mode &{
+            background-color: rgb(210 210 210 / 76%);
+        }
+        // background-color:$orange;
+        width: 40px;
+        height: 40px;
+        transition-duration: .4s;
+        &:hover{
+            background-color: #3b3c47e6;
+            .light_mode &{
+                background-color: rgba(173, 173, 173, 0.76);
+            }
+        }
+        i {
+            border: $border;
+            color: $white;
+            font-size: 28px;
+            color: $off_white;
+            .light_mode &{
+                color: $navy;
+            }
+            // color: $orange;
+            // color: $white;
+            // padding: 10px 10px;
+        }
+    }
+}
+// template_color_mode_section end

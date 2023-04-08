@@ -1,0 +1,691 @@
+// about_page start
+.about_page {
+    border: $border;
+    .about_page_content {
+        border: $border;
+        // personsl_info_area start
+        .personsl_info_area {
+            border: $border;
+            margin-bottom: 80px;
+            @include xs {
+                margin-bottom: 40px;
+              }
+            .personsl_info_item_title {
+                text-align: center;
+                @include xs {
+                    text-align: unset;
+                }
+                @include sm {
+                    text-align: unset;
+                }
+                @include md {
+                    text-align: unset;
+                }
+            }
+            .personsl_info_and_download_cv_area {
+                justify-content: center;
+                display: grid;
+                .personsl_info_content {
+                    border: $border;
+                    display: flex;
+                    justify-content: center;
+                    gap: 180px;
+                    @include xs {
+                        display: block;
+                    }
+                    @include sm {
+                        display: block;
+                    }
+                    @include md {
+                        display: block;
+                    }
+                    .all_content {
+                        border: $border;
+                        ul {
+                            border: $border;
+                            li {
+                                border: $border;
+                                margin-bottom: 20px;
+                                @include xs {
+                                    margin-bottom: 10px;
+                                }
+                                span {
+                                    border: $border;
+                                    font-family: $Poppins_Light;
+                                    // font-family: $Poppins_Regular;
+                                    text-transform: capitalize;
+                                    font-size: 16px;
+                                    line-height: 16px;
+                                    letter-spacing: 1px;
+                                    @include xs {
+                                        font-size: 13px;
+                                        line-height: 13px;
+                                    }
+                                }
+                                .title {
+                                    color: $off_white;
+                                }
+                                .spagee {
+                                    color: $off_white;
+                                }
+                                .details {
+                                    color: $white;
+                                    .light_mode & {
+                                        color: $navy;
+                                    }
+                                }
+                                .email_details {
+                                    text-transform: lowercase;
+                                }
+                            }
+                        }
+                    }
+                }
+                // download_cv_area start
+                .download_cv_area {
+                    border: $border;
+                    display: flex;
+                    margin-top: 15px;
+                    @include xs {
+                      margin: auto;
+                    margin-top: 20px;
+                    }
+                    @include sm {
+                      margin: auto;
+                    }
+                    a {
+                        border: $border;
+                        display: flex;
+                        align-items: center;
+                        background-color: $orange;
+                        .light_mode & {
+                            background-color: $navy;
+                        }
+                        padding: 10px 20px;
+                        transition-duration: 0.4s;
+                        &:hover {
+                            background-color: $white;
+                            background-color: transparent;
+                        }
+                        &:hover p {
+                            color: $orange;
+                            .light_mode & {
+                                color: $navy;
+                            }
+                        }
+                        &:hover i {
+                            color: $orange;
+                            .light_mode & {
+                                color: $navy;
+                            }
+                        }
+                        p {
+                            border: $border;
+                            font-family: $Poppins_Medium;
+                            text-transform: capitalize;
+                            font-size: 14px;
+                            line-height: 14px;
+                            letter-spacing: 1px;
+                            color: $white;
+                            // color: $black;
+                            transition-duration: 0.4s;
+                        }
+                        i {
+                            border: $border;
+                            font-size: 12px;
+                            color: $white;
+                            margin-left: 5px;
+                            transition-duration: 0.4s;
+                        }
+                    }
+                }
+                // download_cv_area end
+            }
+        }
+        // personsl_info_area end
+        // service_area start
+        .service_area {
+            border: $border;
+            margin-bottom: 80px;
+            @include xs {
+                margin-bottom: 40px;
+              }
+            .service_area_content {
+                border: $border;
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 50px;
+                @include xs {
+                    gap: 20px;
+                  }
+                // service item start
+                .service_item {
+                    border: $border;
+                    display: flex;
+                    width: 350px;
+                    overflow: hidden;
+
+                    // border: 1px solid #ffffff1a;
+                    border: 1px solid #21242b;
+                    .light_mode & {
+                        border: 2px solid #e0e0e0;
+                        // color: $navy;
+                    }
+                    // border: 1px solid transparent;
+                    // border: 1px solid $orange;
+                    border-radius: 5px;
+                    display: inline-flex;
+                    padding: 20px;
+                    transition-duration: 0.4s;
+                    @include xs {
+                        padding: 5px;
+                      }
+                    &:hover {
+                        border: 1px solid $orange;
+                        // background-color: transparent;
+                        // border: 1px solid transparent;
+                        .light_mode & {
+                            // border: 2px solid $navy;
+                            border: 2px solid $orange;
+                        }
+                    }
+
+                    &:hover .service_logo::after {
+                        background-color: $orange;
+                        .light_mode & {
+                            background-color: $orange;
+                        }
+                    }
+
+                    .service_logo {
+                        border: $border;
+                        align-items: center;
+                        display: flex;
+                        &::after {
+                            content: "";
+                            width: 1px;
+                            height: 70%;
+                            // background-color: $white;
+                            background-color: #21242b;
+                            .light_mode & {
+                                background-color: #e0e0e0;
+                                // color: $navy;
+                            }
+                            margin: 0px 18px;
+                            transition-duration: 0.4s;
+                        }
+                        // i {
+                        //     border: $border;
+                        //     font-size: 25px;
+                        //     // color: $orange;
+                        //     color: $off_white;
+                        //     // color: $purple;
+                        // }
+                        .logo {
+                            width: 50px;
+                            height: 50px;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+                    }
+                    .service_item_title_and_description {
+                        border: $border;
+                        padding: 30px 0px;
+                        @include xs {
+                            padding: 10px 0px;
+                          }
+                        .title {
+                            border: $border;
+                            margin-bottom: 15px;
+                            p {
+                                border: $border;
+                                font-family: $Poppins_Light;
+                                // font-family: $Poppins_SemiBold;
+                                text-transform: capitalize;
+                                // color: $white;
+                                color: $orange;
+                                .light_mode & {
+                                    color: $navy;
+                                }
+                                font-size: 20px;
+                                line-height: 20px;
+                                letter-spacing: 1px;
+                                @include xs {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                  }
+                            }
+                        }
+                        .description {
+                            border: $border;
+                            p {
+                                border: $border;
+                                font-family: $Poppins_Light;
+                                // text-transform: capitalize;
+                                color: $off_white;
+                                // color: $white;
+                                font-size: 16px;
+                                line-height: 26px;
+                                letter-spacing: 1px;
+                                @include xs {
+                                    font-size: 13px;
+                                    line-height: 20px;
+                                  }
+                            }
+                        }
+                    }
+                }
+                // service item end
+            }
+        }
+        // service_area end
+        // skill_area start
+        .skill_area {
+            border: $border;
+            margin-bottom: 40px;
+            @include xs {
+                margin-bottom: 0px;
+              }
+            .skills_area_content {
+                border: $border;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0px 50px;
+
+                .skills_content {
+                    // margin: 30px 30px;
+                    border: $border;
+                    width: 120px;
+                    margin: 11px 13px 40px 13px;
+
+                    .skill_icon {
+                        border: $border;
+                        width: 120px;
+                        height: 120px;
+                        justify-content: center;
+                        align-items: center;
+                        display: flex;
+                        // border: 0px solid $yellow;
+                        // background-color: #222222;
+                        // border: 1px solid #ffffff1a;
+                        border: 1px solid #21242b;
+                        .light_mode & {
+                            // border: 1px solid #e0e0e0;
+                            border: 1px solid $navy;
+                            // border: 1px solid $off_white;
+                        }
+                        transform: rotate(-45deg);
+                        margin: 0px 0px 25px 0px;
+                        border-radius: 30px;
+
+                        // margin: 30px 30px;
+                        // border: $border;
+                        i {
+                            border: $border;
+                            color: red;
+                            font-size: 60px;
+                            transform: rotate(45deg);
+                        }
+                    }
+
+                    .skill_title {
+                        text-align: center;
+                        // border: $border;
+                        padding-top: 20px;
+                        // padding-bottom: 60px;
+
+                        p {
+                            border: $border;
+                            font-family: $Poppins_Light;
+                            font-size: 16px;
+                            line-height: 16px;
+                            letter-spacing: 1px;
+                            color: $orange;
+                            .light_mode & {
+                                color: $navy;
+                            }
+                            // font-weight: bold;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+
+                .html_icon {
+                    .skill_icon {
+                        // margin: 30px 40px;
+                        i {
+                            color: #d94924;
+                        }
+                    }
+                }
+
+                .css_icon {
+                    .skill_icon {
+                        i {
+                            color: #2196f3;
+                        }
+                    }
+                }
+
+                .bootstrap_icon {
+                    .skill_icon {
+                        i {
+                            color: #7811f4;
+                        }
+                    }
+                }
+                .less_icon {
+                    .skill_icon {
+                        i {
+                            color: #5296ff;
+                        }
+                    }
+                }
+
+                .sass_icon {
+                    .skill_icon {
+                        i {
+                            // font-size: 40px;
+                            color: #cf649a;
+                        }
+                    }
+                }
+
+                .java_script_icon {
+                    .skill_icon {
+                        i {
+                            color: #ffdf00;
+                        }
+                    }
+                }
+
+                .react_icon {
+                    .skill_icon {
+                        i {
+                            color: #61dafb;
+                        }
+                    }
+                }
+
+                .vuejs_icon {
+                    .skill_icon {
+                        i {
+                            color: #3fb27f;
+                        }
+                    }
+                }
+
+                .angularjs_icon {
+                    .skill_icon {
+                        i {
+                            color: #d6002f;
+                        }
+                    }
+                }
+
+                .node_js_icon {
+                    .skill_icon {
+                        i {
+                            color: #519f44;
+                        }
+                    }
+                }
+
+                .express_js_icon {
+                    .skill_icon {
+                        i {
+                            color: #f2f2f2;
+                            .light_mode & {
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+
+                .mongodb_icon {
+                    .skill_icon {
+                        i {
+                            color: #52a74b;
+                        }
+                    }
+                }
+            }
+        }
+        // skill_area end
+        // education_area_and_experience_area start
+        .education_area_and_experience_area {
+            border: $border;
+            margin-bottom: 20px;
+            // education_area start
+            .education_area {
+                border: $border;
+                // education_content start
+                .education_content {
+                    border: $border;
+                    display: flex;
+                    margin-bottom: 60px;
+                    @include xs {
+                        margin-bottom: 40px;
+                      }
+                    .education_logo {
+                        border: $border;
+                        .education_logo_icon {
+                            border: $border;
+                            i {
+                                border: $border;
+                                font-size: 22px;
+                                // color: $orange;
+                                color: $off_white;
+                            }
+                        }
+                    }
+                    .education_content_details {
+                        border: $border;
+                        margin-left: 25px;
+                        @include xs {
+                            margin-left: 10px;
+                          }
+                        p {
+                            border: $border;
+                            // font-family: $Poppins_Light;
+                        }
+                        .year {
+                            border: $border;
+                            p {
+                                color: $off_white;
+                                font-family: $Poppins_Light;
+                                font-size: 16px;
+                                line-height: 16px;
+                                letter-spacing: 1px;
+                                text-transform: capitalize;
+                                @include xs {
+                                    font-size: 15px;
+                                    line-height: 15px;
+                                  }
+                            }
+                        }
+                        .degree_title {
+                            border: $border;
+                            margin: 20px 0px;
+                            @include xs {
+                                margin: 10px 0px;
+                              }
+                            p {
+                                color: $orange;
+                                .light_mode & {
+                                    color: $navy;
+                                }
+                                font-family: $Poppins_Light;
+                                font-size: 20px;
+                                line-height: 20px;
+                                letter-spacing: 1px;
+                                text-transform: capitalize;
+                                @include xs {
+                                    font-size: 16px;
+                                    line-height: 26px;
+                                  }
+                            }
+                        }
+                        .university_name {
+                            border: $border;
+                            margin-bottom: 20px;
+                            @include xs {
+                                margin-bottom: 10px;
+                              }
+                            p {
+                                color: $white;
+                                .light_mode & {
+                                    color: $orange;
+                                    font-family: $Poppins_Light;
+                                }
+                                font-family: $Poppins_ExtraLight;
+                                font-size: 18px;
+                                line-height: 18px;
+                                letter-spacing: 1px;
+                                text-transform: capitalize;
+                                @include xs {
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                  }
+                            }
+                        }
+                        .discription {
+                            border: $border;
+                            p {
+                                color: $off_white;
+                                font-family: $Poppins_Light;
+                                font-size: 16px;
+                                line-height: 26px;
+                                letter-spacing: 1px;
+                                // text-transform: capitalize;
+                                @include xs {
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                  }
+                            }
+                        }
+                    }
+                }
+                // education_content end
+            }
+            // education_area end
+            // experience_area start
+            .experience_area {
+                border: $border;
+                .experience_content {
+                    border: $border;
+                    display: flex;
+                    margin-bottom: 60px;
+                    @include xs {
+                        margin-bottom: 40px;
+                      }
+                    .experience_logo {
+                        border: $border;
+                        .experience_logo_icon {
+                            border: $border;
+                            i {
+                                border: $border;
+                                font-size: 22px;
+                                // color: $orange;
+                                color: $off_white;
+                            }
+                        }
+                    }
+                    .experience_content_details {
+                        border: $border;
+                        margin-left: 25px;
+                        @include xs {
+                            margin-left: 10px;
+                          }
+                        .year {
+                            border: $border;
+                            p {
+                                border: $border;
+                                color: $off_white;
+                                font-family: $Poppins_Light;
+                                font-size: 16px;
+                                line-height: 16px;
+                                letter-spacing: 1px;
+                                text-transform: capitalize;
+                                @include xs {
+                                    font-size: 15px;
+                                    line-height: 15px;
+                                  }
+                            }
+                        }
+                        .job_post_title {
+                            border: $border;
+                            margin: 20px 0px;
+                            @include xs {
+                                margin: 10px 0px;
+                              }
+                            p {
+                                border: $border;
+                                color: $orange;
+                                .light_mode & {
+                                    color: $navy;
+                                }
+                                font-family: $Poppins_ExtraLight;
+                                font-family: $Poppins_Light;
+                                font-size: 20px;
+                                line-height: 20px;
+                                letter-spacing: 1px;
+                                text-transform: capitalize;
+                                @include xs {
+                                    font-size: 16px;
+                                    line-height: 26px;
+                                  }
+                            }
+                        }
+                        .company_name {
+                            border: $border;
+                            margin-bottom: 20px;
+                            @include xs {
+                                margin-bottom: 10px;
+                              }
+                            p {
+                                border: $border;
+                                color: $white;
+                                .light_mode & {
+                                    color: $orange;
+                                    font-family: $Poppins_Light;
+                                }
+                                font-family: $Poppins_ExtraLight;
+                                font-size: 18px;
+                                line-height: 18px;
+                                letter-spacing: 1px;
+                                text-transform: capitalize;
+                                @include xs {
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                  }
+                            }
+                        }
+                        .discription {
+                            border: $border;
+                            p {
+                                border: $border;
+                                color: $off_white;
+                                font-family: $Poppins_Light;
+                                font-size: 16px;
+                                line-height: 26px;
+                                letter-spacing: 1px;
+                                text-transform: capitalize;
+                                @include xs {
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                  }
+                            }
+                        }
+                    }
+                }
+            }
+            // experience_area end
+        }
+        // education_area_and_experience_area end
+    }
+}
+// about_page end

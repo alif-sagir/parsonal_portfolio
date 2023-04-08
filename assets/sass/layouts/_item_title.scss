@@ -1,0 +1,33 @@
+// item_title start
+.item_title {
+    border: $border;
+    margin-bottom: 80px;
+    @include xs {
+        margin-bottom: 40px;
+        // margin-top: 30px;
+      }
+    @include sm {
+        margin-bottom: 20px;
+      }
+    h2 {
+        border: $border;
+        font-family: $Poppins_ExtraLight;
+        // font-family: $Poppins_Thin;
+        color: $white;
+        .light_mode & {
+            color: $orange;
+            font-family: $Poppins_Light;
+        }
+        // color: $orange;
+        font-size: 26px;
+        line-height: 26px;
+        letter-spacing: 5px;
+        text-transform: capitalize;
+        // letter-spacing: 2px;
+        @include xs {
+            font-size: 18px;
+        line-height: 18px;
+          }
+    }
+}
+// item_title end

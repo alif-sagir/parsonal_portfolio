@@ -1,0 +1,69 @@
+// all area main class
+
+.full_area{
+    .full_area_content{
+        .header_and_nav_area{
+
+        }
+        .content_area{
+            .about_page{
+               .about_page_content{
+                   .page_title{
+                    //    display: none;
+                   }
+                   .personsl_info_area{
+                    // display: none;
+                   }
+                   .service_area{
+                    // display: none;
+                   }
+                   .skill_area{
+                    // display: none;
+                   }
+                   .education_area_and_experience_area{
+                    //    display: none;
+                   }
+               }
+
+            }
+        }
+        .template_color_mode{
+            // display: none;
+        }
+        .footer_area{
+            // display: none;
+        }
+    }
+}
+/* responsive_desine_mixin start*/
+@mixin xs() {
+    @media screen and (max-width: 575.9px) {
+        @content();
+    }
+}
+@mixin sm() {
+    @media (min-width: 576px) and (max-width: 767.9px) {
+        @content();
+    }
+}
+@mixin md() {
+    @media (min-width: 768px) and (max-width: 991.9px) {
+        @content();
+    }
+}
+@mixin lg() {
+    @media (min-width: 992px) and (max-width: 1199.9px) {
+        @content();
+    }
+}
+@mixin xl() {
+    @media (min-width: 1200px) and (max-width: 1399.9px) {
+        @content();
+    }
+}
+@mixin xxl() {
+    @media (min-width: 1400px) {
+        @content();
+    }
+}
+/* responsive_desine_mixin end*/

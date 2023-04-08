@@ -1,0 +1,150 @@
+// header_and_nav_area start
+.header_and_nav_area {
+    border: $border;
+    height: 60px;
+    align-items: center;
+    display: grid;
+    // logo_area start
+    .logo_area {
+        border: $border;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        .logo_content{
+            border: $border;
+            align-items: center;
+            display: flex;
+            width: 130px;
+            @include xs {
+                width: 100px;
+            }
+            img{
+                border: $border;
+                width: 100%;
+              
+            }
+        }
+    }
+    // logo_area end
+    // nav_area start
+    .nav_area {
+        border: $border;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: end;
+        // menu_area start
+        .menu_area {
+            @include xs {
+                display: block;
+            }
+            @include sm {
+                display: block;
+            }
+            display: none;
+            .menu_bar_icon {
+                border: $border;
+                align-items: center;
+                display: flex;
+                width: 30px;
+                height: 30px;
+                justify-content: end;
+
+                &:hover i::before {
+                    top: -10px;
+                }
+
+                &:hover i::after {
+                    top: 10px;
+                }
+
+                i {
+                    // border: $border;
+                    color: $orange;
+                    width: 20px;
+                    height: 1px;
+                    background-color: $orange;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        width: 30px;
+                        height: 1px;
+                        background-color: $orange;
+                        position: absolute;
+                        right: 0;
+                        top: -7px;
+                        transition-duration: .4s;
+                    }
+
+                    &::after {
+                        content: "";
+                        width: 30px;
+                        height: 1px;
+                        background-color: $orange;
+                        position: absolute;
+                        right: 0;
+                        top: 7px;
+                        transition-duration: .4s;
+                    }
+                }
+            }
+        }
+        // menu_area end
+
+
+        .nav_area_content {
+            border: $border;
+            ul {
+                border: $border;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                gap: 15px;
+
+                @include xs {
+                    display: none;
+                }
+                @include sm {
+                    display: none;
+                }
+
+                li {
+                    border: $border;
+                    a {
+                        border: $border;
+                        // font-family: $Poppins_Medium;
+                        font-family: $Poppins_Regular;
+                        letter-spacing: 1px;
+                        font-size: 16px;
+                        line-height: 16px;
+                        text-transform: capitalize;
+                        padding: 4px 8px;
+                        color: $orange;
+                        .light_mode & {
+                            color: $navy;
+                            font-family: $Poppins_Medium;
+                        }
+
+                        border-radius: 3px;
+                        // border-bottom: 2px solid transparent;
+                        // border-bottom: 2px solid $orange;
+                        transition-duration: 0.4s;
+
+                        &:hover {
+                            background-color: $orange;
+                            // border-color: $orange;
+                            color: $black;
+                            .light_mode & {
+                                color: $white;
+                                background-color: $navy;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // nav_area end
+}
+// header_and_nav_area end

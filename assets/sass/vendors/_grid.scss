@@ -1,0 +1,12 @@
+.c_container{
+    max-width: 100%;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @include xs {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+}

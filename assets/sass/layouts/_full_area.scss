@@ -1,0 +1,15 @@
+// full_area start
+.full_area{
+    border: $border;
+    // background-color: $solid_black;
+    background-color: $black;
+    .light_mode &{
+        background-color: $white;
+    }
+    // background-color: $navy_black;
+    .full_area_content{
+        border: $border;
+        position: relative;
+    }
+}
+// full_area end
