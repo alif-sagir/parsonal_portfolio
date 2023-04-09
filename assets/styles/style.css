@@ -228,6 +228,25 @@ div {
   color: #ffffff;
   background-color: #002147;
 }
+.header_and_nav_area .nav_area .nav_area_content .active {
+  display: block;
+  position: absolute;
+  top: 53px;
+  right: 0px;
+  z-index: 999999;
+  background-color: #313131;
+  padding: 10px;
+  border-radius: 1px;
+}
+.light_mode .header_and_nav_area .nav_area .nav_area_content .active {
+  background-color: #ffffff;
+}
+.header_and_nav_area .nav_area .nav_area_content .active li {
+  padding: 5px 0px;
+}
+.light_mode .header_and_nav_area .nav_area .nav_area_content .active li a {
+  color: #002147;
+}
 
 .content_area {
   border: 0px solid red;

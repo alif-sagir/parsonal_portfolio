@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="">
+<body id="light_mode_class_add">
     <!-- light_mode -->
     <!-- full_area start -->
     <div class="full_area">
@@ -37,12 +37,12 @@
                                 <div class="nav_area_content">
                                     <!-- menu_area start -->
                                     <div class="menu_area">
-                                        <a href="#" class="menu_bar_icon">
+                                        <a onclick=" document.getElementById('active_class_add').classList.toggle('active')", href="#" class="menu_bar_icon">
                                             <i></i>
                                         </a>
                                     </div>
                                      <!-- menu_area end -->
-                                    <ul>
+                                    <ul id="active_class_add" class="">
                                         <li>
                                             <a href="index.html">home</a>
                                         </li>
@@ -130,7 +130,7 @@
                 </div>
                 <!-- template_color_mode_section start -->
                 <section class="template_color_mode">
-                    <div class="color_mode_icon">
+                    <div onclick="document.getElementById('light_mode_class_add').classList.toggle('light_mode')", class="color_mode_icon">
                         <i class="fa-solid fa-moon"></i>
                         <!-- <i class="fa-regular fa-moon"></i> -->
                     </div>

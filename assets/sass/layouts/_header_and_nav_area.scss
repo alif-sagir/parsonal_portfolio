@@ -10,7 +10,7 @@
         height: 100%;
         align-items: center;
         display: flex;
-        .logo_content{
+        .logo_content {
             border: $border;
             align-items: center;
             display: flex;
@@ -18,10 +18,9 @@
             @include xs {
                 width: 100px;
             }
-            img{
+            img {
                 border: $border;
                 width: 100%;
-              
             }
         }
     }
@@ -74,7 +73,7 @@
                         position: absolute;
                         right: 0;
                         top: -7px;
-                        transition-duration: .4s;
+                        transition-duration: 0.4s;
                     }
 
                     &::after {
@@ -85,16 +84,16 @@
                         position: absolute;
                         right: 0;
                         top: 7px;
-                        transition-duration: .4s;
+                        transition-duration: 0.4s;
                     }
                 }
             }
         }
         // menu_area end
 
-
         .nav_area_content {
             border: $border;
+            // position: relative;
             ul {
                 border: $border;
                 display: flex;
@@ -121,6 +120,7 @@
                         text-transform: capitalize;
                         padding: 4px 8px;
                         color: $orange;
+
                         .light_mode & {
                             color: $navy;
                             font-family: $Poppins_Medium;
@@ -143,6 +143,29 @@
                     }
                 }
             }
+            // responsive active class start
+            .active {
+                display: block;
+                position: absolute;
+                top: 53px;
+                right: 0px;
+                z-index: 999999;
+                background-color: #313131;
+                .light_mode &{
+                    background-color: $white;
+                }
+                padding: 10px;
+                border-radius: 1px;
+                li {
+                    padding: 5px 0px;
+                    a {
+                        .light_mode &{
+                            color: $navy;
+                        }
+                    }
+                }
+            }
+            // responsive active class end
         }
     }
     // nav_area end
