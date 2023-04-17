@@ -1,2 +1,331 @@
-@import "../layouts/index_area";
+// @import "../layouts/index_area";
 // @import "../abstracts/mixins";
+
+// index_area start
+.index_area {
+    border: $border;
+    min-height: $content_area_height;
+    display: grid;
+    align-items: center;
+    .index_area_content {
+        border: $border;
+
+        // index_area_left start
+        .index_area_left {
+            border: $border;
+            @include xs {
+                justify-content: center;
+                display: flex;
+            }
+            @include sm {
+                justify-content: center;
+                display: flex;
+            }
+            @include md {
+                justify-content: center;
+                display: flex;
+                padding-top: 30px;
+                padding-bottom: 40px;
+            }
+            @include lg {
+                justify-content: center;
+                display: flex;
+                padding-top: 30px;
+                padding-bottom: 50px;
+            }
+            .profile_image {
+                border: $border;
+                position: relative;
+                display: grid;
+                @include xs {
+                    padding: 16px 0px;
+                }
+                @include sm {
+                    padding: 16px 0px;
+                }
+                
+                .image {
+                    border: $border;
+                    // width: 100%;
+                    // height: calc(100vh - 200px);
+                    width: 430px;
+                    height: 570px;
+                    background-repeat: no-repeat;
+                    // background-position: center;
+                    background-position-x: center;
+                    background-position-y: top;
+                    background-size: cover;
+                    background-color: $black;
+                    // background-color: $black;
+                    z-index: 9999;
+                    border-radius: 3px;
+                    @include xs {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 100%;
+                        border: 5px solid rgba(105, 113, 125, 0.2);
+                        border: 5px solid $off_white;
+                    }
+                    @include sm {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 100%;
+                        border: 5px solid rgba(105, 113, 125, 0.2);
+                        border: 5px solid $off_white;
+                    }
+                  
+                }
+                .bold_border {
+                    border: $border;
+                    // border: 50px solid #404040;
+                    border: 50px solid $off_white_2;
+                    .light_mode & {
+                        border: 50px solid #d7d7d7;
+                        @include xs {
+                            border: unset;
+                            width: unset;
+                            height: unset;
+                        }
+                        @include sm {
+                            border: unset;
+                            width: unset;
+                            height: unset;
+                        }
+                    }
+                    // border: 50px solid #69717d33;
+                    border-radius: 3px;
+                    width: 430px;
+                    height: 570px;
+                    position: absolute;
+                    z-index: 99;
+                    transform: translateY(4%);
+                    left: 22px;
+                    @include xs {
+                        border: unset;
+                        width: unset;
+                        height: unset;
+                    }
+                    @include sm {
+                        border: unset;
+                        width: unset;
+                        height: unset;
+                    }
+                }
+            }
+        }
+        // index_area_left end
+        // index_area_right start
+        .index_area_right {
+            border: $border;
+            height: 100%;
+            align-items: center;
+            display: flex;
+            @include xl {
+               margin-left: 30px;
+             }
+            .name_and_description_area {
+                border: $border;
+                .title_and_name_content {
+                    border: $border;
+                    .title_content {
+                        border: $border;
+                        @include xs {
+                           text-align: center;
+                        }
+                        @include sm {
+                           text-align: center;
+                        }
+                        @include md {
+                           text-align: center;
+                        }
+                        @include lg {
+                           text-align: center;
+                        }
+                        span {
+                            border: $border;
+                            .title_text {
+                                border: $border;
+                                color: $white;
+                                .light_mode & {
+                                    color: $orange;
+                                }
+                                font-family: $Poppins_Light;
+                                // font-family: $Poppins_Thin;
+                                // font-family: $Poppins_SemiBold;
+                                font-size: 80px;
+                               
+                                // font-size: 70px;
+                                line-height: 90px;
+                                @include xs {
+                                    font-size: 25px;
+                                    line-height: 25px;
+                                }
+                                @include sm {
+                                    font-size: 25px;
+                                    line-height: 25px;
+                                }
+                                @include md {
+                                    font-size: 65px;
+                                    line-height: 75px;
+                                }
+                            }
+
+                            .hi_text {
+                                letter-spacing: 10px;
+                                @include xs {
+                                    letter-spacing: 3px;
+                                }
+                                @include sm {
+                                    letter-spacing: 3px;
+                                }
+                            }
+
+                            .semicolon {
+                                color: $orange;
+                                margin: 0px 20px 0px 10px;
+                                @include xs {
+                                    margin: 0px 0px 0px 0px;
+                                }
+                                @include sm {
+                                    margin: 0px 0px 0px 0px;
+                                }
+                                .light_mode & {
+                                    color: $navy;
+                                }
+                            }
+                        }
+                    }
+                    .name_content {
+                        margin: 30px 0px 45px 0px;
+                        @include xs {
+                            margin: 16px 0px 16px 0px;
+                            text-align: center;
+                        }
+                        @include sm {
+                            margin: 16px 0px 16px 0px;
+                            text-align: center;
+                        }
+                        @include md {
+                         
+                            text-align: center;
+                        }
+                        @include lg {
+                         
+                            text-align: center;
+                        }
+                        .my_name {
+                            border: $border;
+                            font-family: $Poppins_Light;
+                            color: $orange;
+                            .light_mode & {
+                                color: $navy;
+                            }
+                            font-size: 70px;
+                            letter-spacing: 10px;
+                            text-transform: capitalize;
+                            @include xs {
+                                font-size: 25px;
+                                letter-spacing: 3px;
+                            }
+                            @include sm {
+                                font-size: 25px;
+                                letter-spacing: 3px;
+                            }
+                            @include md {
+                                font-size: 60px;
+                        
+                            }
+                        }
+                    }
+                }
+                .Profession_title {
+                    @include xs {
+                        text-align: center;
+                     }
+                    @include sm {
+                        text-align: center;
+                     }
+                    @include md {
+                        text-align: center;
+                     }
+                    @include lg {
+                        text-align: center;
+                     }
+                    h2 {
+                        border: $border;
+                        color: $white;
+                        .light_mode & {
+                            color: $orange;
+                            font-family: $Poppins_ExtraLight;
+                        }
+                        font-family: $Poppins_Thin;
+                        font-size: 40px;
+                        text-transform: uppercase;
+                        font-size: 100px;
+                        letter-spacing: 20px;
+                        font-size: 35px;
+                        letter-spacing: 10px;
+                        line-height: 35px;
+                        margin-bottom: 30px;
+                        @include xs {
+                            font-size: 16px;
+                            line-height: 16px;
+                            letter-spacing: 3px;
+                            margin-bottom: 16px;
+                            font-family: $Poppins_ExtraLight;
+                        }
+                        @include sm {
+                            font-size: 20px;
+                            line-height: 20px;
+                            letter-spacing: 3px;
+                            margin-bottom: 16px;
+                            // font-family: $Poppins_ExtraLight;
+                        }
+                    }
+                }
+                .description {
+                    @include xs {
+                       padding-bottom: 16px;
+                    }
+                    @include sm {
+                       padding-bottom: 16px;
+                    }
+                    @include md {
+                       padding-bottom: 30px;
+                    }
+                    @include lg {
+                       padding-bottom: 30px;
+                    }
+                    p {
+                        border: $border;
+                        font-family: $Poppins_Light;
+                        .light_mode & {
+                            // font-family: $Poppins_Light;
+                            // font-family: $Poppins_Regular;
+                            // color: $navy;
+                        }
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: $off_white;
+                        letter-spacing: 1px;
+                        text-align: justify;
+                        @include xs {
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0px;
+                            font-family: $Poppins_Regular;
+                        }
+                        @include sm {
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0px;
+                            font-family: $Poppins_Regular;
+                        }
+                    }
+                }
+            }
+        }
+        // index_area_right end
+    }
+}
+// index_area end

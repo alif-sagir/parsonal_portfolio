@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 
 </head>
 
-<body id="light_mode_class_add">
+<body id="light_mode_class_add" onload="light_mode_class_add.classList.add(localStorage.theme)">
     <!-- full_area start -->
     <div class="full_area">
         <div class="c_container">
@@ -30,38 +30,39 @@
 
                         </div>
                         <!-- logo_area end -->
-                       <!-- nav_area start -->
-                       <div class="col-6 col-xs-6 col-md-9">
-                        <div class="nav_area">
-                            <div class="nav_area_content">
-                                <!-- menu_area start -->
-                                <div class="menu_area">
-                                    <a onclick=" document.getElementById('active_class_add').classList.toggle('active')", href="#" class="menu_bar_icon">
-                                        <i></i>
-                                    </a>
+                        <!-- nav_area start -->
+                        <div class="col-6 col-xs-6 col-md-9">
+                            <div class="nav_area">
+                                <div class="nav_area_content">
+                                    <!-- menu_area start -->
+                                    <div class="menu_area">
+                                        <a onclick=" document.getElementById('active_class_add').classList.toggle('active')"
+                                            href="#" class="menu_bar_icon">
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                    <!-- menu_area end -->
+                                    <ul id="active_class_add" class="">
+                                        <li>
+                                            <a href="index.html">home</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html">about</a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio.html">portfolio</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">blog</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                 <!-- menu_area end -->
-                                <ul id="active_class_add" class="">
-                                    <li>
-                                        <a href="index.html">home</a>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">about</a>
-                                    </li>
-                                    <li>
-                                        <a href="portfolio.html">portfolio</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">contact</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">blog</a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <!-- nav_area end -->
+                        <!-- nav_area end -->
                     </div>
                 </div>
                 <!-- header_nav_area end -->
@@ -81,7 +82,7 @@
                                     <section class="blog_details_content">
                                         <!-- blog_image start -->
                                         <div class="blog_image"
-                                            style="background-image: url('./assets/images/blog_img/1.jpg');">
+                                            style="background-image: url('./assets/images/blog_img/blog7.jpg');">
 
                                         </div>
                                         <!-- blog_image end -->
@@ -92,7 +93,7 @@
                                                     <i class="fa-regular fa-user"></i>
                                                 </span>
                                                 <span class="admin_name">
-                                                    alif sagir
+                                                    Aahid Ejhan
                                                 </span>
 
                                             </a>
@@ -160,7 +161,7 @@
                                         <!-- blog_title_and_discription end -->
                                     </section>
                                     <!-- comment_form_area start -->
-                                    <section class="comment_form_area">
+                                    <div class="comment_form_area">
                                         <div class="comment_form_area_title">
                                             <span>leave a comment</span>
                                         </div>
@@ -197,10 +198,10 @@
                                             </div>
                                             <!--submit_area end -->
                                         </form>
-                                    </section>
+                                    </div>
                                     <!--comment_form_area end -->
                                     <!-- all_comment_view_area start -->
-                                    <section class="all_comment_view_area">
+                                    <div class="all_comment_view_area">
                                         <!-- comment_title start -->
                                         <div class="comment_title" id="comment">
                                             <a href="#">comment(3)</a>
@@ -210,13 +211,13 @@
                                         <div class="comment">
                                             <div class="viewers_profile_image">
                                                 <a href="#" class="profile_image"
-                                                    style="background-image: url('./assets/images/comment_img/img_1.png');">
+                                                    style="background-image: url('./assets/images/comment_img/img1.jpg');">
 
                                                 </a>
                                             </div>
                                             <div class="viewers_name_and_comment">
                                                 <div class="viewers_name">
-                                                    <a href="#">alif</a>
+                                                    <a href="#">aran</a>
                                                 </div>
                                                 <div class="viewers_comment">
                                                     <p>Lorem ipsum dolor sit amet consecte
@@ -231,13 +232,13 @@
                                         <div class="comment">
                                             <div class="viewers_profile_image">
                                                 <a href="#" class="profile_image"
-                                                    style="background-image: url('./assets/images/comment_img/img_2.png');">
+                                                    style="background-image: url('./assets/images/comment_img/img2.jpg');">
 
                                                 </a>
                                             </div>
                                             <div class="viewers_name_and_comment">
                                                 <div class="viewers_name">
-                                                    <a href="#">arfan</a>
+                                                    <a href="#">tarfen</a>
                                                 </div>
                                                 <div class="viewers_comment">
                                                     <p>Lorem ipsum dolor sit amet consecte
@@ -256,13 +257,13 @@
                                         <div class="comment">
                                             <div class="viewers_profile_image">
                                                 <a href="#" class="profile_image"
-                                                    style="background-image: url('./assets/images/comment_img/3.jpg');">
+                                                    style="background-image: url('./assets/images/comment_img/img3.jpg');">
 
                                                 </a>
                                             </div>
                                             <div class="viewers_name_and_comment">
                                                 <div class="viewers_name">
-                                                    <a href="#">salem</a>
+                                                    <a href="#">yahit</a>
                                                 </div>
                                                 <div class="viewers_comment">
                                                     <p>Lorem ipsum dolor sit amet consecte
@@ -276,7 +277,7 @@
                                         <!-- comment end -->
 
 
-                                    </section>
+                                    </div>
                                     <!-- all_comment_view_area end -->
                                 </div>
 
@@ -286,20 +287,21 @@
                     <!-- blog_details_page end -->
                 </div>
                 <!-- template_color_mode_section start -->
-                <section class="template_color_mode">
-                    <div onclick="document.getElementById('light_mode_class_add').classList.toggle('light_mode')", class="color_mode_icon">
+                <div class="template_color_mode">
+                    <div onclick="localStorage.theme?localStorage.theme=='light_mode'?localStorage.setItem('theme','dark'):localStorage.setItem('theme','light_mode'):localStorage.setItem('theme','light_mode'); light_mode_class_add.classList.toggle('light_mode')"
+                        class="color_mode_icon">
                         <i class="fa-solid fa-moon"></i>
                         <!-- <i class="fa-regular fa-moon"></i> -->
                     </div>
-                </section>
-                 <!-- template_color_mode_section start -->
+                </div>
+                <!-- template_color_mode_section start -->
                 <!-- footer_area start -->
                 <footer class="footer_area">
                     <div class="footer_area_content">
                         <div class="row">
                             <div class="col-12 col-xs-12 order-2 order-xs-2 col-md-6 order-md-1">
                                 <div class="copy_right_area">
-                                    <span>copyright &copy; by <a href="#">alif sagir</a> 2023</span>
+                                    <span>copyright &copy; by <a href="#">Aahid Ejhan</a> 2023</span>
                                 </div>
                             </div>
                             <div class="col-12 col-xs-12 order-1 order-xs-1 col-md-6 order-md-2">

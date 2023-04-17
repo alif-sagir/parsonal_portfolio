@@ -12,7 +12,7 @@
 
 </head>
 
-<body id="light_mode_class_add">
+<body id="light_mode_class_add" onload="light_mode_class_add.classList.add(localStorage.theme)">
     <!-- full_area start -->
     <div class="full_area">
         <div class="c_container">
@@ -36,7 +36,8 @@
                             <div class="nav_area_content">
                                 <!-- menu_area start -->
                                 <div class="menu_area">
-                                    <a onclick=" document.getElementById('active_class_add').classList.toggle('active')", href="#" class="menu_bar_icon">
+                                    <a onclick=" document.getElementById('active_class_add').classList.toggle('active')"
+                                     href="#" class="menu_bar_icon">
                                         <i></i>
                                     </a>
                                 </div>
@@ -77,7 +78,7 @@
                                     </div>
                                 </div>
                                 <!-- portfolio_page_title end -->
-                                <section class="all_project_area">
+                                <div class="all_project_area">
                                     <!-- project start -->
                                     <ul class="project">
                                         <li class="project_item">
@@ -109,7 +110,7 @@
                                             <div class="project_name_area">
                                                 <!-- <span class="project_title">project name</span>
                                                 <span class="semicolon">:</span> -->
-                                                <a href="portfolio_details.html" class="project_name">school management system</a>
+                                                <a href="portfolio_details.html" class="project_name">Project management system</a>
                                             </div>
                                             <!-- project_name_area end -->
                                         </li>
@@ -175,7 +176,7 @@
                                             <div class="project_name_area">
                                                 <!-- <span class="project_title">project name</span>
                                                 <span class="semicolon">:</span> -->
-                                                <a href="portfolio_details.html" class="project_name">school management system</a>
+                                                <a href="portfolio_details.html" class="project_name">personal portfolio</a>
                                             </div>
                                             <!-- project_name_area end -->
                                         </li>
@@ -208,7 +209,7 @@
                                             <div class="project_name_area">
                                                 <!-- <span class="project_title">project name</span>
                                                 <span class="semicolon">:</span> -->
-                                                <a href="portfolio_details.html" class="project_name">school management system</a>
+                                                <a href="portfolio_details.html" class="project_name">Learning management system </a>
                                             </div>
                                             <!-- project_name_area end -->
                                         </li>
@@ -241,7 +242,7 @@
                                             <div class="project_name_area">
                                                 <!-- <span class="project_title">project name</span>
                                                 <span class="semicolon">:</span> -->
-                                                <a href="portfolio_details.html" class="project_name">school management system</a>
+                                                <a href="portfolio_details.html" class="project_name">eCommerce site</a>
                                             </div>
                                             <!-- project_name_area end -->
                                         </li>
@@ -274,26 +275,27 @@
                                             <div class="project_name_area">
                                                 <!-- <span class="project_title">project name</span>
                                                 <span class="semicolon">:</span> -->
-                                                <a href="portfolio_details.html" class="project_name">school management system</a>
+                                                <a href="portfolio_details.html" class="project_name">Restaurant </a>
                                             </div>
                                             <!-- project_name_area end -->
                                         </li>
 
                                     </ul>
                                     <!-- project end -->
-                                </section>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- portfolio_page end -->
                 </div>
                 <!-- template_color_mode_section start -->
-                <section class="template_color_mode">
-                    <div onclick="document.getElementById('light_mode_class_add').classList.toggle('light_mode')", class="color_mode_icon">
+                <div class="template_color_mode">
+                    <div onclick="localStorage.theme?localStorage.theme=='light_mode'?localStorage.setItem('theme','dark'):localStorage.setItem('theme','light_mode'):localStorage.setItem('theme','light_mode'); light_mode_class_add.classList.toggle('light_mode')"
+                        class="color_mode_icon">
                         <i class="fa-solid fa-moon"></i>
                         <!-- <i class="fa-regular fa-moon"></i> -->
                     </div>
-                </section>
+                </div>
                  <!-- template_color_mode_section start -->
                  <!-- footer_area start -->
                  <footer class="footer_area">
@@ -301,7 +303,7 @@
                         <div class="row">
                             <div class="col-12 col-xs-12 order-2 order-xs-2 col-md-6 order-md-1">
                                 <div class="copy_right_area">
-                                    <span>copyright &copy; by <a href="#">alif sagir</a> 2023</span>
+                                    <span>copyright &copy; by <a href="#">Aahid Ejhan</a> 2023</span>
                                 </div>
                             </div>
                             <div class="col-12 col-xs-12 order-1 order-xs-1 col-md-6 order-md-2">

@@ -12,7 +12,7 @@
 
 </head>
 
-<body id="light_mode_class_add">
+<body id="light_mode_class_add" onload="light_mode_class_add.classList.add(localStorage.theme)">
     <!-- full_area start -->
     <div class="full_area">
         <div class="c_container">
@@ -36,7 +36,8 @@
                             <div class="nav_area_content">
                                 <!-- menu_area start -->
                                 <div class="menu_area">
-                                    <a onclick=" document.getElementById('active_class_add').classList.toggle('active')", href="#" class="menu_bar_icon">
+                                    <a onclick=" document.getElementById('active_class_add').classList.toggle('active')" 
+                                    href="#" class="menu_bar_icon">
                                         <i></i>
                                     </a>
                                 </div>
@@ -94,12 +95,12 @@
                                                     <li>
                                                         <span class="title">first name</span>
                                                         <span class="spagee">:</span>
-                                                        <span class="details">alif</span>
+                                                        <span class="details">Aahid</span>
                                                     </li>
                                                     <li>
                                                         <span class="title">last name</span>
                                                         <span class="spagee">:</span>
-                                                        <span class="details">sagir</span>
+                                                        <span class="details">Ejhan</span>
                                                     </li>
                                                     <li>
                                                         <span class="title">date of birth</span>
@@ -108,13 +109,13 @@
                                                     </li>
                                                     <li>
                                                         <span class="title">nationality</span>
-                                                        <spa class="spagee">:</spa>
-                                                        <span class="details">bangladeshi</span>
+                                                        <span class="spagee">:</span>
+                                                        <span class="details">Qatar</span>
                                                     </li>
                                                     <li>
                                                         <span class="title">language</span>
                                                         <span class="spagee">:</span>
-                                                        <span class="details">bangla , english</span>
+                                                        <span class="details">Arabic , english</span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -130,22 +131,22 @@
                                                     <li>
                                                         <span class="title">address</span>
                                                         <span class="spagee">:</span>
-                                                        <span class="details">dhaka , bangladesh</span>
+                                                        <span class="details">Doha , Qatar</span>
                                                     </li>
                                                     <li>
                                                         <span class="title">phone</span>
                                                         <span class="spagee">:</span>
-                                                        <span class="details">+880 1759371882</span>
+                                                        <span class="details">+974 000000</span>
                                                     </li>
                                                     <li>
                                                         <span class="title">email</span>
                                                         <span class="spagee">:</span>
-                                                        <span class="details email_details">alifsagir99@gmail.com</span>
+                                                        <span class="details email_details">aahidejhan@gmail.com</span>
                                                     </li>
                                                     <li>
                                                         <span class="title">linkedin</span>
                                                         <span class="spagee">:</span>
-                                                        <span class="details">Alif sagir</span>
+                                                        <span class="details">Aahid Ejhan</span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -621,12 +622,13 @@
                     <!-- about_area end -->
                 </div>
                  <!-- template_color_mode_section start -->
-                 <section class="template_color_mode">
-                    <div onclick="document.getElementById('light_mode_class_add').classList.toggle('light_mode')", class="color_mode_icon">
+                 <div class="template_color_mode">
+                    <div onclick="localStorage.theme?localStorage.theme=='light_mode'?localStorage.setItem('theme','dark'):localStorage.setItem('theme','light_mode'):localStorage.setItem('theme','light_mode'); light_mode_class_add.classList.toggle('light_mode')"
+                        class="color_mode_icon">
                         <i class="fa-solid fa-moon"></i>
                         <!-- <i class="fa-regular fa-moon"></i> -->
                     </div>
-                </section>
+                </div>
                  <!-- template_color_mode_section start -->
                 <!-- footer_area start -->
                 <footer class="footer_area">
@@ -634,7 +636,7 @@
                         <div class="row">
                             <div class="col-12 col-xs-12 order-2 order-xs-2 col-md-6 order-md-1">
                                 <div class="copy_right_area">
-                                    <span>copyright &copy; by <a href="#">alif sagir</a> 2023</span>
+                                    <span>copyright &copy; by <a href="#">Aahid Ejhan</a> 2023</span>
                                 </div>
                             </div>
                             <div class="col-12 col-xs-12 order-1 order-xs-1 col-md-6 order-md-2">

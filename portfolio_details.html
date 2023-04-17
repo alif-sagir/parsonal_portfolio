@@ -12,7 +12,7 @@
 
 </head>
 
-<body id="light_mode_class_add">
+<body id="light_mode_class_add" onload="light_mode_class_add.classList.add(localStorage.theme)">
     <!-- full_area start -->
     <div class="full_area">
         <div class="c_container">
@@ -24,10 +24,10 @@
                         <div class="col-6 col-xs-6 col-md-3">
                             <div class="logo_area">
                                 <a href="index.html" class="logo_content">
-                                   <img src="./assets/images/logo/dark_logo.png" alt="logo">
-                                 </a>
+                                    <img src="./assets/images/logo/dark_logo.png" alt="logo">
+                                </a>
                             </div>
-                           
+
                         </div>
                         <!-- logo_area end -->
                         <!-- nav_area start -->
@@ -36,11 +36,12 @@
                                 <div class="nav_area_content">
                                     <!-- menu_area start -->
                                     <div class="menu_area">
-                                        <a onclick=" document.getElementById('active_class_add').classList.toggle('active')", href="#" class="menu_bar_icon">
+                                        <a onclick=" document.getElementById('active_class_add').classList.toggle('active')"
+                                            href="#" class="menu_bar_icon">
                                             <i></i>
                                         </a>
                                     </div>
-                                     <!-- menu_area end -->
+                                    <!-- menu_area end -->
                                     <ul id="active_class_add" class="">
                                         <li>
                                             <a href="index.html">home</a>
@@ -88,41 +89,44 @@
                                         </div>
                                         <div class="project_name">
                                             <h2 class="project_name_title">
-                                                school management system
+                                                Project management system
                                             </h2>
                                         </div>
                                     </section>
                                     <!-- project_name_and_catagori area end -->
                                     <!-- thimnil_image_area start -->
-                                    <section class="thimnil_image_and_live_previer_area">
-                                        <a href="#" class="thimnil_image" style="background-image: url('./assets/images/portfolio_img/8.jpg');">
+                                    <div class="thimnil_image_and_live_previer_area">
+                                        <a href="#" class="thimnil_image"
+                                            style="background-image: url('./assets/images/portfolio_img/8.jpg');">
 
                                         </a>
                                         <div class="live_previer">
                                             <a href="#">live preview</a>
                                         </div>
-                                    </section>
+                                    </div>
                                     <!-- thimnil_image_area end-->
                                     <!-- table_of_contents_area start -->
-                                    <section class="contents_area table_of_contents_area">
+                                    <div class="contents_area table_of_contents_area">
                                         <div class="contents_title table_of_contents_area_title">
                                             <span class="title">table of contents</span>
                                         </div>
                                         <div class="table_of_contents">
                                             <ul>
-                                                <li> <a class="content_text " href="#interoduction" >interoduction</a></li>
+                                                <li> <a class="content_text " href="#interoduction">interoduction</a>
+                                                </li>
                                                 <li> <a class="content_text " href="#feature">feature</a></li>
                                                 <li> <a class="content_text " href="#technologies">technologies</a></li>
-                                                <li> <a class="content_text " href="#demo_screenshort">demo screenshort</a></li>
+                                                <li> <a class="content_text " href="#demo_screenshort">demo
+                                                        screenshort</a></li>
                                                 <li> <a class="content_text " href="#setup">setup</a></li>
                                             </ul>
 
                                         </div>
 
-                                    </section>
+                                    </div>
                                     <!-- table_of_contents_area end-->
                                     <!-- interoduction_area start -->
-                                    <section class="contents_area interoduction_area" id="interoduction">
+                                    <div class="contents_area interoduction_area" id="interoduction">
                                         <div class="contents_title interoduction_title">
                                             <span class="title">interoduction</span>
                                         </div>
@@ -136,10 +140,10 @@
                                                 sum dolorem possimus iusto quasi!
                                             </span>
                                         </div>
-                                    </section>
+                                    </div>
                                     <!-- interoduction_area end -->
                                     <!-- features_area start -->
-                                    <section class="contents_area features_area" id="feature">
+                                    <div class="contents_area features_area" id="feature">
                                         <div class="contents_title features_title">
                                             <span class="title">features</span>
                                         </div>
@@ -157,10 +161,10 @@
 
                                             </ul>
                                         </div>
-                                    </section>
+                                    </div>
                                     <!-- features_area end -->
                                     <!-- technologies_area start -->
-                                    <section class="contents_area technologies_area" id="technologies">
+                                    <div class="contents_area technologies_area" id="technologies">
                                         <div class="contents_title technologies_title">
                                             <span class="title">technologies</span>
                                         </div>
@@ -181,10 +185,10 @@
 
                                             </ul>
                                         </div>
-                                    </section>
+                                    </div>
                                     <!-- technologies_area end -->
                                     <!-- screenshort_area start -->
-                                    <section class="contents_area screenshort_area" id="demo_screenshort">
+                                    <div class="contents_area screenshort_area" id="demo_screenshort">
                                         <div class="contents_title screenshort_title">
                                             <span class="title">screenshort</span>
                                         </div>
@@ -260,10 +264,10 @@
                                             </li>
                                             <!-- screenshort_image_and_title_area end -->
                                         </ul>
-                                    </section>
+                                    </div>
                                     <!-- screenshort_area end -->
                                     <!-- setup_area start -->
-                                    <section class="contents_area setup_area" id="setup">
+                                    <div class="contents_area setup_area" id="setup">
                                         <div class="contents_title setup_title">
                                             <span class="title">setup</span>
                                         </div>
@@ -286,7 +290,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </section>
+                                    </div>
                                     <!-- setup_area end -->
                                 </div>
                                 <!-- portfolio_content_details end -->
@@ -296,52 +300,53 @@
                     <!--portfolio_details_page end -->
                 </div>
                 <!-- template_color_mode_section start -->
-                <section class="template_color_mode">
-                    <div onclick="document.getElementById('light_mode_class_add').classList.toggle('light_mode')", class="color_mode_icon">
+                <div class="template_color_mode">
+                    <div onclick="localStorage.theme?localStorage.theme=='light_mode'?localStorage.setItem('theme','dark'):localStorage.setItem('theme','light_mode'):localStorage.setItem('theme','light_mode'); light_mode_class_add.classList.toggle('light_mode')"
+                        class="color_mode_icon">
                         <i class="fa-solid fa-moon"></i>
                         <!-- <i class="fa-regular fa-moon"></i> -->
                     </div>
-                </section>
-                 <!-- template_color_mode_section start -->
-               <!-- footer_area start -->
-               <footer class="footer_area">
-                <div class="footer_area_content">
-                    <div class="row">
-                        <div class="col-12 col-xs-12 order-2 order-xs-2 col-md-6 order-md-1">
-                            <div class="copy_right_area">
-                                <span>copyright &copy; by <a href="#">alif sagir</a> 2023</span>
+                </div>
+                <!-- template_color_mode_section start -->
+                <!-- footer_area start -->
+                <footer class="footer_area">
+                    <div class="footer_area_content">
+                        <div class="row">
+                            <div class="col-12 col-xs-12 order-2 order-xs-2 col-md-6 order-md-1">
+                                <div class="copy_right_area">
+                                    <span>copyright &copy; by <a href="#">Aahid Ejhan</a> 2023</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-xs-12 order-1 order-xs-1 col-md-6 order-md-2">
-                            <div class="footer_social_link_area">
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fa-regular fa-paper-plane"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa-brands fa-github"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#"> <i class="fa-brands fa-dribbble"></i> </a>
-                                    </li>
-        
-                                </ul>
+                            <div class="col-12 col-xs-12 order-1 order-xs-1 col-md-6 order-md-2">
+                                <div class="footer_social_link_area">
+                                    <ul>
+                                        <li>
+                                            <a href="#"> <i class="fa-regular fa-paper-plane"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> <i class="fa-brands fa-github"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#"> <i class="fa-brands fa-dribbble"></i> </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
-            <!-- footer_area end -->
+                </footer>
+                <!-- footer_area end -->
             </div>
         </div>
     </div>

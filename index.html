@@ -12,7 +12,7 @@
 
 </head>
 
-<body id="light_mode_class_add">
+<body id="light_mode_class_add" onload="light_mode_class_add.classList.add(localStorage.theme)">
     <!-- light_mode -->
     <!-- full_area start -->
     <div class="full_area">
@@ -25,10 +25,10 @@
                         <div class="col-6 col-xs-6 col-md-3">
                             <div class="logo_area">
                                 <a href="index.html" class="logo_content">
-                                   <img src="./assets/images/logo/dark_logo.png" alt="logo">
-                                 </a>
+                                    <img src="./assets/images/logo/dark_logo.png" alt="logo">
+                                </a>
                             </div>
-                           
+
                         </div>
                         <!-- logo_area end -->
                         <!-- nav_area start -->
@@ -37,11 +37,12 @@
                                 <div class="nav_area_content">
                                     <!-- menu_area start -->
                                     <div class="menu_area">
-                                        <a onclick=" document.getElementById('active_class_add').classList.toggle('active')", href="#" class="menu_bar_icon">
+                                        <a onclick=" document.getElementById('active_class_add').classList.toggle('active')"
+                                            href="#" class="menu_bar_icon">
                                             <i></i>
                                         </a>
                                     </div>
-                                     <!-- menu_area end -->
+                                    <!-- menu_area end -->
                                     <ul id="active_class_add" class="">
                                         <li>
                                             <a href="index.html">home</a>
@@ -94,17 +95,17 @@
                                                 <div class="title_and_name_content">
                                                     <div class="title_content">
                                                         <span>
-                                                            <h2 class="hi_text">Hi</h2>
+                                                            <span class="title_text hi_text">Hi</span>
                                                         </span>
                                                         <span>
-                                                            <h2 class="semicolon">!</h2>
+                                                            <span class="title_text semicolon">!</span>
                                                         </span>
                                                         <span>
-                                                            <h2>I am</h2>
+                                                            <span class="title_text">I am</span>
                                                         </span>
                                                     </div>
                                                     <div class="name_content">
-                                                        <h1 class="my_name">alif sagir</h1>
+                                                        <h1 class="my_name">A<span class="typed"></span></h1>
                                                     </div>
                                                 </div>
                                                 <div class="Profession_title">
@@ -116,7 +117,8 @@
                                                         illo
                                                         nisi eius sunt suscipit ad nostrum, perspiciatis,
                                                         expedita nobis eligendi
-                                                        pariatur aut nihil quas dolorum ipsa sit ex.</p>
+                                                        pariatur aut nihil quas dolorum ipsa sit ex.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -129,20 +131,21 @@
                     <!-- index_area end -->
                 </div>
                 <!-- template_color_mode_section start -->
-                <section class="template_color_mode">
-                    <div onclick="document.getElementById('light_mode_class_add').classList.toggle('light_mode')", class="color_mode_icon">
+                <div class="template_color_mode">
+                    <div onclick="localStorage.theme?localStorage.theme=='light_mode'?localStorage.setItem('theme','dark'):localStorage.setItem('theme','light_mode'):localStorage.setItem('theme','light_mode'); light_mode_class_add.classList.toggle('light_mode')"
+                        class="color_mode_icon">
                         <i class="fa-solid fa-moon"></i>
                         <!-- <i class="fa-regular fa-moon"></i> -->
                     </div>
-                </section>
-                 <!-- template_color_mode_section start -->
+                </div>
+                <!-- template_color_mode_section start -->
                 <!-- footer_area start -->
                 <footer class="footer_area">
                     <div class="footer_area_content">
                         <div class="row">
                             <div class="col-12 col-xs-12 order-2 order-xs-2 col-md-6 order-md-1">
                                 <div class="copy_right_area">
-                                    <span>copyright &copy; by <a href="#">alif sagir</a> 2023</span>
+                                    <span>copyright &copy; by <a href="#">Aahid Ejhan</a> 2023</span>
                                 </div>
                             </div>
                             <div class="col-12 col-xs-12 order-1 order-xs-1 col-md-6 order-md-2">
@@ -163,11 +166,11 @@
                                         <li>
                                             <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
                                         </li>
-                                        
+
                                         <li>
                                             <a href="#"> <i class="fa-brands fa-dribbble"></i> </a>
                                         </li>
-            
+
                                     </ul>
                                 </div>
                             </div>
@@ -180,6 +183,21 @@
         </div>
     </div>
     <!-- full_area end -->
+    <!-- js text animaition library start-->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <!-- js text animaition library end-->
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed(".typed", {
+            strings: ["AHID EJHAN"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            cursorChar: ' ',
+            loop: true
+        })
+    </script>
+
 </body>
 
 </html>

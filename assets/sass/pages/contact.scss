@@ -1,0 +1,286 @@
+// contact_page start
+.contact_page {
+    border: $border;
+    .contact_page_container {
+        border: $border;
+        // contact_all_content start
+        .contact_all_content {
+            border: $border;
+            min-height: calc(100vh - 216px);
+            align-items: center;
+            display: grid;
+            // contact_area_left start
+            .contact_area_left {
+                border: $border;
+                // left area same item class start
+                // height: 100%;
+                // align-content: space-between;
+                // display: grid;
+                .left_item_area {
+                    border: $border;
+                    margin-bottom: 40px;
+                    .title {
+                        border: $border;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        .title_icon {
+                            border: $border;
+                            margin-right: 15px;
+                            i {
+                                border: $border;
+                                font-size: 16px;
+                                color: $orange;
+                                .light_mode & {
+                                    color: $navy;
+                                }
+                            }
+                        }
+                        h2 {
+                            border: $border;
+                            // font-family: $Poppins_Regular;
+                            font-family: $Poppins_Light;
+                            color: $white;
+                            .light_mode & {
+                                color: $navy;
+                                font-family: $Poppins_Medium;
+                            }
+                            font-size: 18px;
+                            line-height: 18px;
+                            text-transform: capitalize;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    .item_value {
+                        border: $border;
+                        margin-left: 30px;
+                        a {
+                            border: $border;
+                            font-family: $Poppins_Light;
+                            font-size: 16px;
+                            line-height: 16px;
+                            letter-spacing: 1px;
+                            color: $off_white;
+                            text-transform: capitalize;
+                            transition-duration: 0.4s;
+                            &:hover {
+                                color: $orange;
+                                
+                            }
+                            span {
+                                border: $border;
+                            }
+                            .item_a {
+                                border: $border;
+                            }
+                        }
+                    }
+                }
+
+                // left area same item class end
+                .address_area {
+                    .address_details {
+                        .village_or_post {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .phone_area {
+                    .phone_number {
+                        display: inline-block;
+                        .item_a {
+                            display: block;
+                        }
+                        .first_number {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+                .email_area {
+                    // margin-bottom: unset;
+                    .email_address {
+                        .item_a {
+                            text-transform: lowercase;
+                        }
+                    }
+                }
+            }
+            // contact_area_left end
+            // contact_area_right start
+            .contact_area_right {
+                border: $border;
+                form {
+                    border: $border;
+                    // all same label and input area start
+                    .label_all {
+                        border: $border;
+                        display: block;
+                        font-family: $Poppins_Light;
+                        color: $white;
+                        .light_mode & {
+                            color: $navy;
+                            font-family: $Poppins_Medium;
+                        }
+                        font-size: 18px;
+                        line-height: 18px;
+                        text-transform: capitalize;
+                        letter-spacing: 1px;
+                        margin-bottom: 25px;
+                    }
+                    .input_all {
+                        border: $border;
+                        width: 100%;
+                        outline: 0;
+                        background-color: transparent;
+                        border-bottom: 1px solid $orange;
+                        .light_mode & {
+                            border-bottom: 1px solid $navy;
+                        }
+                        font-family: $Poppins_Light;
+                        font-size: 16px;
+                        line-height: 16px;
+                        letter-spacing: 1px;
+                        color: $off_white;
+                        padding-bottom: 7px;
+                    }
+                    // all same label and input area end
+                    //  user_name_area start
+                    .user_name_area {
+                        border: $border;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 35px;
+                        @include xs {
+                            display: block;
+                          }
+                        .first_name {
+                            border: $border;
+                            width: 40%;
+                            @include xs {
+                                width: 100%;
+                                margin-bottom: 35px;
+                              }
+                            label {
+                            }
+                            input {
+                            }
+                        }
+                        .last_name {
+                            border: $border;
+                            width: 40%;
+                            @include xs {
+                                width: 100%;
+                              }
+                            label {
+                            }
+                            input {
+                            }
+                        }
+                    }
+                    // user_name_area end
+                    // email_area start
+                    .email_area {
+                        border: $border;
+                        margin-bottom: 35px;
+                        .email {
+                            label {
+                            }
+                            input {
+                            }
+                        }
+                    }
+                    // email_area end
+                    // message_area start
+                    .message_area {
+                        border: $border;
+                        margin-bottom: 35px;
+                        .message {
+                            label {
+                            }
+                            textarea {
+                                width: 100%;
+                                height: 110px;
+                                outline: 0;
+                                background-color: transparent;
+                                border: unset;
+                                border-bottom: 1px solid $orange;
+                                .light_mode & {
+                                    border-bottom: 1px solid $navy;
+                                }
+                                font-family: $Poppins_Light;
+                                font-size: 16px;
+                                line-height: 16px;
+                                letter-spacing: 1px;
+                                color: $off_white;
+                                padding-bottom: 7px;
+                            }
+                        }
+                    }
+                    // message_area end
+                    // submit_area start
+                    .submit_button_area {
+                        border: $border;
+                        @include xs {
+                            margin-bottom: 35px;
+                          }
+                        @include sm {
+                            margin-bottom: 35px;
+                          }
+                        @include md {
+                            margin-bottom: 35px;
+                          }
+                        @include lg {
+                            margin-bottom: 35px;
+                          }
+                        button {
+                            border: $border;
+                            width: 100%;
+                            background-color: $orange;
+                            border: 1px solid $orange;
+                            .light_mode & {
+                                background-color: $navy;
+                                border: 1px solid $navy;
+                            }
+                            padding: 4px 0px;
+                            transition-duration: 0.4s;
+                            &:hover {
+                                background-color: transparent;
+                            }
+                            &:hover .button_icon{
+                                .light_mode & {
+                                    color: $navy;
+                                }
+                            }
+                            &:hover .button_title{
+                                .light_mode & {
+                                    color: $navy;
+                                }
+                            }
+                            .button_icon {
+                                border: $border;
+                                font-size: 16px;
+                                margin-right: 10px;
+                                color: $white; 
+                                transition-duration: 0.4s;
+                            }
+                            .button_title {
+                                border: $border;
+                                font-family: $Poppins_Medium;
+                                font-size: 16px;
+                                line-height: 16px;
+                                letter-spacing: 3px;
+                                text-transform: capitalize;
+                                color: $white;
+                                transition-duration: 0.4s;
+                            }
+                        }
+                    }
+                    // submit_area end
+                }
+            }
+            // contact_area_right end
+        }
+        // contact_all_content end
+    }
+}
+// contact_page end

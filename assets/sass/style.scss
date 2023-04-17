@@ -1,26 +1,26 @@
 @import "./core/reset";
-
 @import "./core/typography";
+
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
+
+@import "./vendors/grid";
+
 @import "./layouts/full_area";
 @import "./layouts/header_and_nav_area";
 @import "./layouts/content_area";
 @import "./layouts/footer_area";
 @import "./layouts/page_title";
 @import "./layouts/item_title";
-// @import "./layouts/index_area";
-@import "./layouts/about_area";
-@import "./layouts/portfolio_area";
-@import "./layouts/blog_area";
-@import "./layouts/contact_area";
-@import "./layouts/blog_details_area.scss";
-@import "./layouts/portfolio_details.scss";
 @import "./layouts/template_color_mode_section";
+
 @import "./pages/index.scss";
 @import "./pages/about.scss";
 @import "./pages/portfolio.scss";
+@import "./pages/portfolio_details.scss";
 @import "./pages/contact.scss";
 @import "./pages/blog.scss";
-@import "./vendors/grid";
+@import "./pages/blog_details.scss";
+
+// @import "./vendors/grid";
 
